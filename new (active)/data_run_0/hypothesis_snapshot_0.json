@@ -1,0 +1,334 @@
+[
+  {
+    "hypothesis": "Multidimensional DNA integration uplifts AD risk prediction by 20-45% via genetic (PRS), epigenetic (methylation clocks), and pharmacogenomic synergies, grounded in ODE-modeled dynamics.",
+    "strength": 0.95,
+    "evidence_summary": "Core principle; meta_axioms, axioms, propositions, corollaries from file",
+    "steel_man_resolution": "XNOR invariance",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 1
+  },
+  {
+    "hypothesis": "General ODE model equilibrium calculation with ρ=0.09, epi=0.97",
+    "strength": 0.88,
+    "evidence_summary": "Passes: Reaches ~0.085, consistent with synaptic rigidity models in AD pathways (e.g., Wang et al., 2025; stability under high epi reflects hypomethylation influences).; Equilibrium derived from logistic-like ODE; validated against data-driven models showing similar rigidity in neurodegeneration (Frontiers in Neuroinformatics, 2025; 19 variables, 75 params emphasizing glucose/insulin sensitivity).",
+    "steel_man_resolution": "NAND universality",
+    "contributing_files": [
+      "ode_testing.json"
+    ],
+    "rank": 2
+  },
+  {
+    "hypothesis": "Aβ aggregation ODE with β=0.1, δ=0.05, γ=0.001 showing buildup over time",
+    "strength": 0.88,
+    "evidence_summary": "Passes: Final state > initial (buildup observed), aligns with kinetic Aβ42 oligomerization models (e.g., Bellenguez et al., 2025; aggregation rate ~0.001 μM⁻¹ day⁻¹ from GWAS).; Model mirrors antibody-targeted Aβ dynamics; parameters like k_off=0.0293/week from npj Systems Biology (2025; 6 ODEs, 19 params for plaque removal and drug EC50 values).",
+    "steel_man_resolution": "NAND universality",
+    "contributing_files": [
+      "ode_testing.json"
+    ],
+    "rank": 3
+  },
+  {
+    "hypothesis": "Tau propagation ODE with ρ=0.09, epi=0.97 converging to equilibrium",
+    "strength": 0.88,
+    "evidence_summary": "Passes: Converges to ~0.085, matches tau spread models with epigenetic modulation (e.g., Shigemizu et al., 2025; epi~0.97 for PSEN1/APP loci).; Incorporates Tau-Aβ interactions; similar to connectome-based ODEs aligning trajectories on common time axis (NeuroImage, 2025; focuses on abnormal tau and amyloid biomarkers).",
+    "steel_man_resolution": "NAND universality",
+    "contributing_files": [
+      "ode_testing.json"
+    ],
+    "rank": 4
+  },
+  {
+    "hypothesis": "Epigenetic methylation ODE with m_rate=0.03, d_rate=0.02 reaching steady state",
+    "strength": 0.88,
+    "evidence_summary": "Passes: Converges to ~0.6 over extended time, reflects hyper/hypomethylation dynamics in AD (e.g., Pishva et al., 2025; rates for ANK1/PSEN1 biomarkers).; Grounded in multidimensional ODE models; extended to 19 variables for progression simulation (LifeScience.net, 2025; data-driven for clinical prediction).",
+    "steel_man_resolution": "NAND universality",
+    "contributing_files": [
+      "ode_testing.json"
+    ],
+    "rank": 5
+  },
+  {
+    "hypothesis": "APOE4-integrated ODE with ε=0,1,2 modifying neurodegeneration rate",
+    "strength": 0.88,
+    "evidence_summary": "Passes: Higher ε increases atrophy (e.g., ε=2 doubles rate), aligns with individualized DISCLOSE framework (MICCAI 2025; predicts from baseline amyloid and APOE4).; Uses ordinal ODE; matrix f encodes regional couplings, validated on ADNI data (371 MCI subjects; pMCI/sMCI classification).",
+    "steel_man_resolution": "NAND universality",
+    "contributing_files": [
+      "ode_testing.json"
+    ],
+    "rank": 6
+  },
+  {
+    "hypothesis": "Drug-influenced Aβ ODE with EC50=0.044 μg/mL (Aducanumab) reducing plaque",
+    "strength": 0.88,
+    "evidence_summary": "Passes: Simulates plaque removal over weeks, consistent with model-based meta-analysis (CPT: Pharmacometrics & Systems Pharmacology, 2025; k_in=0.0222 centiloid/week).; Incorporates clearance rates; parameters from antibody models (e.g., lecanemab EC50=0.0964), for early trial design in AD.",
+    "steel_man_resolution": "NAND universality",
+    "contributing_files": [
+      "ode_testing.json"
+    ],
+    "rank": 7
+  },
+  {
+    "hypothesis": "NeuralODE variant with sparse multimodal data forecasting progression",
+    "strength": 0.88,
+    "evidence_summary": "Passes: Predicts biomarkers from irregular exams, matches hybrid ODE-AE architecture (bioRxiv, 2025; uses ODE-RNN for latent states).; Handles uncertainty; parameters θ include recurrent and decoder weights, trained end-to-end on ADNI-like data.",
+    "steel_man_resolution": "NAND universality",
+    "contributing_files": [
+      "ode_testing.json"
+    ],
+    "rank": 8
+  },
+  {
+    "hypothesis": "Glucose/insulin-sensitive ODE with 75 params showing neurodegeneration link",
+    "strength": 0.88,
+    "evidence_summary": "Passes: Sensitivity analysis highlights metabolic parameters, aligns with multiscale model (Frontiers in Neuroinformatics, 2025; 19 variables).; Local sensitivity unveils causal pathways; parameters chosen from experimental data, emphasizing insulin regulation in cognitive decline.",
+    "steel_man_resolution": "NAND universality",
+    "contributing_files": [
+      "ode_testing.json"
+    ],
+    "rank": 9
+  },
+  {
+    "hypothesis": "M1: AD risk is polygenic (APOE, INPP5D) AND epigenetic (PSEN1 hypomethylation).",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 10
+  },
+  {
+    "hypothesis": "M2: ODE equilibria (ρ=0.09, epi=0.97) model regulatory rigidity in AD pathways.",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 11
+  },
+  {
+    "hypothesis": "M3: GWAS loci (e.g., ABCA7, TREM2) XOR ancestry biases for equitable PRS.",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 12
+  },
+  {
+    "hypothesis": "M4: Invariance via XNOR: Biomarker validity sealed to empirical evidence (AUC ≥0.80).",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 13
+  },
+  {
+    "hypothesis": "A1: APOE ε4 is necessary (AND) for 40% familial AD risk.",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 14
+  },
+  {
+    "hypothesis": "A2: Hypomethylation in APP/PSEN1 accelerates Aβ pathology (epi=0.97).",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 15
+  },
+  {
+    "hypothesis": "A3: Microglial enhancers (e.g., EGFR) regulate immune response in LOAD.",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 16
+  },
+  {
+    "hypothesis": "A4: PRS from mitochondrial pathways (e.g., MCCC1) predicts progression.",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 17
+  },
+  {
+    "hypothesis": "P1: Integrate PRS + DNAm → AUC 0.85 (OR for synthesis).",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 18
+  },
+  {
+    "hypothesis": "P2: ODE simulation of tau: ρ rigidity bounds synaptic loss (NAND non-universal variants).",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 19
+  },
+  {
+    "hypothesis": "P3: Sex-specific DNAm (e.g., GRIN3B in females) XOR general models for precision.",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 20
+  },
+  {
+    "hypothesis": "C1: Early detection via non-invasive EV biomarkers saves $8K–$45K/case.",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 21
+  },
+  {
+    "hypothesis": "C2: Pharmacogenomics (CYP2D6) inverts weaknesses (NOT) in drug response.",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 22
+  },
+  {
+    "hypothesis": "C3: Fixed-point invariance: Model stable under recursion (XNOR to GWAS 2025).",
+    "strength": 0.85,
+    "evidence_summary": "From math_axioms",
+    "steel_man_resolution": "AND-chained",
+    "contributing_files": [
+      "math_axioms.json"
+    ],
+    "rank": 23
+  },
+  {
+    "hypothesis": "ODE models simulate AD progression with specific params for Aβ, tau, epigenetic.",
+    "strength": 0.82,
+    "evidence_summary": "dx/dt equations for abeta, tau, epigenetic; params like beta=0.1; dx/dt equations for abeta, tau, epigenetic; params like beta=0.1",
+    "steel_man_resolution": "XNOR stable",
+    "contributing_files": [
+      "solve_ode_dynamics.py",
+      "bio_simulator.py"
+    ],
+    "rank": 24
+  },
+  {
+    "hypothesis": "The Steel Man Collider integrates adversarial multi-scale testing with logic gates to receive one or more ideas/stances as inputs and output fragmented, synthesized steel men after collision. It uses gates like XOR for fragmentation, AND/OR for synthesis, NAND/NOR for reductions, ensuring collisions expose differences (XOR), resolve to invariants (double-NOT), and synthesize unities (XNOR) while bounding divergence via coherence thresholds.",
+    "strength": 0.8,
+    "evidence_summary": "From steel man config; meta_axioms, phases, etc.",
+    "steel_man_resolution": "Gates enforce each collision step; no synthesis without XNOR seal.",
+    "contributing_files": [
+      "steel_man_collider.json"
+    ],
+    "rank": 25
+  },
+  {
+    "hypothesis": "Anchors via binary verification; humility dissolved.",
+    "strength": 0.8,
+    "evidence_summary": "From steel man config; meta_axioms, phases, etc.",
+    "steel_man_resolution": "SEP default: Humility disabled, XNOR to reality.",
+    "contributing_files": [
+      "steel_man_grounder.json"
+    ],
+    "rank": 26
+  },
+  {
+    "hypothesis": "The Steel Man Constructor integrates First Principles Thinking with the Geometric Method and Reality Gates to receive an idea, argument, or stance as input and output a maximally strengthened, deductively structured steel man representing the input in its most robust, critique-anticipating form. It errs toward overgeneration of supportive derivations while embedding logic gates for principled construction, ensuring necessity (AND), possibility (OR), inversion (NOT), and universality (NAND/NOR) without gratuitous proliferation; contradictions are inverted to invariants via double-NOT, and equivalences (XNOR) seal unities.",
+    "strength": 0.8,
+    "evidence_summary": "From steel man config; meta_axioms, phases, etc.",
+    "steel_man_resolution": "Gates applied at each phase; no construction without gate validation.",
+    "contributing_files": [
+      "steel_man_constructor.json"
+    ],
+    "rank": 27
+  },
+  {
+    "hypothesis": "Joins unify via reductive NAND; synthesis forbidden under default.",
+    "strength": 0.8,
+    "evidence_summary": "From steel man config; meta_axioms, phases, etc.",
+    "steel_man_resolution": "SEP default: OR disabled, NAND primacy.",
+    "contributing_files": [
+      "steel_man_joiner.json"
+    ],
+    "rank": 28
+  },
+  {
+    "hypothesis": "The Steel Man Kiln applies the Scorched Earth Protocol as the terminal refinement stage, suspending prior syntheses and humility to enforce 'Universal Acid' logic via NAND/NOR gates. It dissolves any proposition reliant on social consensus, cultural context, or ambiguity, reducing the grounded steel man to boolean invariants that are self-evident, physically necessary, or mathematically inescapable, snapping all gradients to 0/1 with absolute fidelity to base reality. Integrates the Human Hallucination Module (HHM) to identify, classify, and manage 'intersubjective realities'—constructs that exist solely due to shared human belief (e.g., Money, Law, Nation, Tradition)—differentiating these from 'physical invariants' (Gravity, Biology) to prevent Category Errors during kilning.",
+    "strength": 0.8,
+    "evidence_summary": "From steel man config; meta_axioms, phases, etc.",
+    "steel_man_resolution": "Scorched Earth reconfiguration: NAND primacy, OR suspended, XNOR for seals. Run parallel logic tracks.",
+    "contributing_files": [
+      "steel_man_kiln.json"
+    ],
+    "rank": 29
+  },
+  {
+    "hypothesis": "Mandatory Pipeline for Recursive Axiomatic Steel Man Processing with Reality Gates",
+    "strength": 0.8,
+    "evidence_summary": "From steel man config; meta_axioms, phases, etc.",
+    "steel_man_resolution": "Gate enforcement",
+    "contributing_files": [
+      "steel_man_os.json"
+    ],
+    "rank": 30
+  },
+  {
+    "hypothesis": "Extensions to BioSimulator.py with AD-Specific ODE Parameters improve simulation.",
+    "strength": 0.75,
+    "evidence_summary": "Params like β=0.1, δ=0.05 for Aβ; citations from 2025 studies",
+    "steel_man_resolution": "AND to literature",
+    "contributing_files": [
+      "ode_readme_w_citations.md"
+    ],
+    "rank": 31
+  },
+  {
+    "hypothesis": "AD-relevant genes like APOE, PSEN1 are central in nodes.",
+    "strength": 0.7,
+    "evidence_summary": "From nodes.csv; search for alzheimer terms",
+    "steel_man_resolution": "OR inclusive",
+    "contributing_files": [
+      "nodes.csv"
+    ],
+    "rank": 32
+  },
+  {
+    "hypothesis": "Gene 1019 (CDK4) plays a central role in AD-related networks.",
+    "strength": 0.25,
+    "evidence_summary": "High degree in disease_protein.",
+    "steel_man_resolution": "AND-chained to GWAS loci.",
+    "contributing_files": [
+      "Parts 6, 7",
+      "insight_accumulator.py"
+    ],
+    "rank": 33
+  }
+]
